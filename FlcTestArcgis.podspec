@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
 
  # spec.source_files  = "SunShineRN", "SunShineRN/**/*.{h,m}"
   # spec.exclude_files = "FlcTestArcgis"
-   spec.source_files = "FlcTestArcgis/API/tianditu/*.{h,m}"
+   spec.source_files = "FlcTestArcgis/*.{h,m}"
  # spec.public_header_files = "Classes/**/*.h"
 
 
