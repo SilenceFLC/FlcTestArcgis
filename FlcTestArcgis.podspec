@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FlcTestArcgis"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of FlcTestArcgis."
+  spec.version      = "0.0.2"
+  spec.summary      = "一个创建pod仓库的简单demo"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+这只是一个创建pod仓库的简单demo，并没有实际的意思。
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/FlcTestArcgis"
+  spec.homepage     = "https://github.com/SilenceFLC/FlcTestArcgis"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +39,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # spec.license      = "MIT (example)"
+   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "fenglichang" => "fenglichang@gagogroup.com" }
+  spec.author             = { "SlienceFLC" => "346267857@qq.com" }
   # Or just: spec.author    = "fenglichang"
   # spec.authors            = { "fenglichang" => "fenglichang@gagogroup.com" }
   # spec.social_media_url   = "https://twitter.com/fenglichang"
@@ -64,10 +65,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+   spec.platform     = :ios, "11.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+   spec.ios.deployment_target = "11.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -77,9 +78,8 @@ Pod::Spec.new do |spec|
   #
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
-  #
-
-  spec.source       = { :git => "http://EXAMPLE/FlcTestArcgis.git", :tag => "#{spec.version}" }
+ 
+  spec.source       = { :git => "https://github.com/SilenceFLC/FlcTestArcgis.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,10 +90,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
+ # spec.source_files  = "SunShineRN", "SunShineRN/**/*.{h,m}"
+  # spec.exclude_files = "FlcTestArcgis"
+   spec.source_files = "FlcTestArcgis/API/tianditu/*.{h,m}"
+ # spec.public_header_files = "Classes/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -130,7 +130,6 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   # spec.requires_arc = true
-
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
